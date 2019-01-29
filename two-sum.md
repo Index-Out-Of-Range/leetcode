@@ -1,4 +1,4 @@
-### 关键在于只写一层循环，降低时间复杂度
+### **关键在于只写一层循环，降低时间复杂度**
 
 ## C++
 ### 使用unordered_map
@@ -14,6 +14,7 @@ template < class Key,                                    // unordered_map::key_t
 ```
 
 2. 说明
+
 unordered_map 是一种关联容器，用于存储由关键值 (Key Value，以下称为Key 值) 和映射值 (Mapped Value，以下称为映射值) 组成的元素，并且允许根据其 Key 值快速检索各个元素。 
 在 unordered_map 容器中，Key 值通常用来唯一标识元素，映射值是与该 Key 值关联内容的对象。Key 值与映射值的类型可能不同。 
 在 unordered_map 内部，元素没有按照其 Key 值与映射值的任何顺序进行排序 ，而是根据它们的 Hash 值组织成桶，允许它们通过其 Key 值直接快速访问单个元素（通常具有常数等级的平均时间复杂度）。 
