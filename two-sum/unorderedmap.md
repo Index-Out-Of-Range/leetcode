@@ -87,21 +87,21 @@ it->second;              // same as (*it).second  (the mapped value)
 * bucket
 
            >原型
-size_type bucket ( const key_type& k ) const;
+           >size_type bucket ( const key_type& k ) const;
 
            >说明 
-定位元素所在的桶，**返回 Key 值为输入参数 k 的元素的所在桶号。 **
-桶是容器内部 Hash 表中的一个槽，槽中的元素根据 Key 值分配元素。桶号的编号从 0 到 (bucket_count - 1)。 
-桶中单个元素可以通过 unordered_map::begin 和 unordered_map::end 返回的范围迭代器进行访问。
+           >定位元素所在的桶，**返回 Key 值为输入参数 k 的元素的所在桶号。 **
+           >桶是容器内部 Hash 表中的一个槽，槽中的元素根据 Key 值分配元素。桶号的编号从 0 到 (bucket_count - 1)。 
+           >桶中单个元素可以通过 unordered_map::begin 和 unordered_map::end 返回的范围迭代器进行访问。
 
 * count
 
            >原型
-size_type count ( const key_type& k ) const;
+           size_type count ( const key_type& k ) const;
 
            >说明 
-使用给定的 Key 值计算元素。 
-搜索容器中 Key 值为输入参数 k 的元素，并返回找到元素的数量。由于 unordered_map 容器不允许存在重复的 Key 值，这说明如果容器中存在具有该 Key 值的元素，则该函数返回 1，否则返回 0。
+           使用给定的 Key 值计算元素。 
+           搜索容器中 Key 值为输入参数 k 的元素，并返回找到元素的数量。由于 unordered_map 容器不允许存在重复的 Key 值，这说明如果容器中存在具有该 Key 值的元素，则该函数返回 1，否则返回 0。
 
 * 其他
 
