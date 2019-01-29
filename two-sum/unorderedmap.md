@@ -106,13 +106,13 @@ it->second;              // same as (*it).second  (the mapped value)
 * 其他
 
            >clear 
-清除 map 中所有元素；
-erase 
-删除 map 中指定位置的元素；
-insert 
-在 map 指定位置添加 pair 类型的元素；
-find 
-获取 map 中元素的迭代器；
-begin, end 
-map 的正向迭代器的起始位置与终点位置；
+           清除 map 中所有元素；
+           erase 
+           删除 map 中指定位置的元素；
+           insert 
+           在 map 指定位置添加 pair 类型的元素；
+           find 
+           获取 map 中元素的迭代器；
+           begin, end 
+           map 的正向迭代器的起始位置与终点位置；
 
