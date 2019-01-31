@@ -54,3 +54,24 @@ int main()
 ```
 
 
+## python
+
+
+
+```
+class Solution:
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        sign = 1 if x > 0 else -1
+        x = x * sign
+        str_x = list(str(x))[::-1]
+        x = int("".join(str_x))
+        return x * sign if x < 2**31 else 0
+
+```
+
+
+
