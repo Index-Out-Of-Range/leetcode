@@ -75,4 +75,10 @@ class Solution:
 
 
 ### python 将列表反序
+
+
+```
 reverse_list = list[::-1]
+```
+
+
