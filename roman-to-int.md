@@ -110,3 +110,34 @@ public:
 };
 ```
 
+
+
+```
+class Solution
+{
+public:
+	int romanToInt(string s)
+	{
+		int temp = 0, right = 0, left = 0;
+		for (auto c = s.rbegin(); c != s.rend(); c++)
+		{
+			switch (*c)
+			{
+			case 'I': left = 1; break;
+			case 'V': left = 5; break;
+			case 'X': left = 10; break;
+			case 'L': left = 50; break;
+			case 'C': left = 100; break;
+			case 'D': left = 500; break;
+			case 'M': left = 1000; break;
+			default: break;
+			}
+			left >= temp ? right += left : right -= left;
+			temp = left;
+		}
+		return right;
+	}
+};
+```
+
+
