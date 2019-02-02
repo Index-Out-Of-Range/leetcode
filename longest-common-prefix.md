@@ -1,3 +1,5 @@
+# 关键是使用最短的字符串和最长的字符串比较
+
 ## C++
 
 
@@ -43,7 +45,7 @@ int main()
 
 
 
-## java
+## Java
 
 Sort the array first, and then you can simply compare the first and last elements in the sorted array.
 
@@ -72,4 +74,26 @@ public String longestCommonPrefix(String[] strs) {
     }
 ```
 
+
+
+## python
+
+
+
+```
+class Solution:
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if not strs:
+            return ""
+        s1 = min(strs)
+        s2 = max(strs)
+        for i, ch in enumerate(s1):
+            if ch != s2[i]:
+                return s1[:i]
+        return s1
+```
 
