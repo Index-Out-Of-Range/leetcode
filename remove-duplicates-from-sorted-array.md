@@ -4,7 +4,7 @@
     
 
 ```
-for (vector<int>::iterator it = nums.begin() + 1; it != nums.end();)
+    for (vector<int>::iterator it = nums.begin() + 1; it != nums.end();)
     {
         
     }
