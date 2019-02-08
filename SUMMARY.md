@@ -11,4 +11,6 @@
 * [Merge Two Sorted Lists](merge-two-sorted-lists.md)
 * [Remove Duplicates from Sorted Array](remove-duplicates-from-sorted-array.md)
 * [Remove Element](remove-element.md)
+* [Implement strStr\(\)](implement-strstr.md)
+  * [KMP算法](implement-strstr/kmpsuan-fa.md)
 
