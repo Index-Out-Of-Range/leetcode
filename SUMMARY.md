@@ -13,4 +13,5 @@
 * [Remove Element](remove-element.md)
 * [Implement strStr\(\)](implement-strstr.md)
   * [KMP算法](implement-strstr/kmpsuan-fa.md)
+* [Search Insert Position](search-insert-position.md)
 
