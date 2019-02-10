@@ -14,4 +14,5 @@
 * [Implement strStr\(\)](implement-strstr.md)
   * [KMP算法](implement-strstr/kmpsuan-fa.md)
 * [Search Insert Position](search-insert-position.md)
+* [Count and Say](count-and-say.md)
 
