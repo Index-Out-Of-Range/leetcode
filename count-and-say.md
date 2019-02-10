@@ -79,7 +79,7 @@ class Solution
 
 
 ### stringstream
-* 头文件：#include<sstream>
+* 头文件：sstream
 
 
 ```
