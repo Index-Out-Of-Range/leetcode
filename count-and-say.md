@@ -44,6 +44,9 @@ class Solution
 
 ### faster
 
+
+
+```
 class Solution
 {
   public:
@@ -70,6 +73,9 @@ class Solution
         return result;
     }
 };
+```
+
+
 
 
 ### stringstream
