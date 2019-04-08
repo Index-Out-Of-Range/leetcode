@@ -1,15 +1,13 @@
+# Reverse Integer
+
 ## C++
 
-
-
-```
+```text
 INT_MAX = 2147483647
 INT_MIN = -2147483648
 ```
 
-
-
-```
+```text
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -50,15 +48,11 @@ int main()
     system("pause");
     return 0;
 }
-
 ```
-
 
 ## python
 
-
-
-```
+```text
 class Solution:
     def reverse(self, x):
         """
@@ -70,15 +64,11 @@ class Solution:
         str_x = list(str(x))[::-1]
         x = int("".join(str_x))
         return x * sign if x < 2**31 else 0
-
 ```
-
 
 ### python 将列表反序
 
-
-```
+```text
 reverse_list = list[::-1]
 ```
-
 

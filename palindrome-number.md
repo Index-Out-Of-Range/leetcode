@@ -1,8 +1,8 @@
+# Palindrome Number
+
 ## C++
 
-
-
-```
+```text
 #include <iostream>
 using namespace std;
 
@@ -32,10 +32,9 @@ int main()
 }
 ```
 
-
 ### 只判断数字的一半
 
-```
+```text
 class Solution
 {
   public:
@@ -54,16 +53,11 @@ class Solution
         return result == x;
     }
 };
-
 ```
-
-
 
 ## python
 
-
-```
-
+```text
 class Solution:
     def isPalindrome(self, x):
         """
@@ -77,12 +71,9 @@ class Solution:
         return int_x == x
 ```
 
-
-
 ### a little faster
 
-```
-
+```text
 class Solution:
     def isPalindrome(self, x):
         """
@@ -100,5 +91,4 @@ class Solution:
             j -= 1
         return True
 ```
-
 

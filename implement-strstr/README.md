@@ -1,6 +1,8 @@
+# Implement strStr\(\)
+
 ## C++
 
-```
+```text
 class Solution
 {
   public:
@@ -23,16 +25,11 @@ class Solution
 };
 ```
 
-
-
 ### Brute-Force
 
-* Traverse all the possible starting points of `haystack` (from `0` to `haystack.length() - needle.length()` ) and see if the following characters in `haystack` match those of `needle`。
+* Traverse all the possible starting points of `haystack` \(from `0` to `haystack.length() - needle.length()` \) and see if the following characters in `haystack` match those of `needle`。
 
-
-
-```
-
+```text
 class Solution {
 public:
     int strStr(string haystack, string needle) {
@@ -55,9 +52,7 @@ public:
 
 ### KMP
 
-
-
-```
+```text
 class Solution
 {
   public:
@@ -98,12 +93,9 @@ class Solution
 };
 ```
 
-
 ## python
 
-
-```
-
+```text
 class Solution:
     def strStr(self, haystack: 'str', needle: 'str') -> 'int':
         for i in range(len(haystack) - len(needle) + 1):

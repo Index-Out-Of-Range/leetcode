@@ -1,8 +1,8 @@
+# Maximum Subarray
+
 ## C++
 
-
-```
-
+```text
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -26,11 +26,10 @@ class Solution
 ```
 
 ### divide and conquer（不是很懂）
+
 * Divide-and-Conquer算法将nums分成两半，并递归地找到它们中的最大子阵列和。 嗯，最棘手的部分是处理最大子阵列跨越两半的情况。 对于这种情况，我们使用线性算法：从中间元素开始并移动到两端（左端和右端），记录我们看到的最大总和。 在这种情况下，最大总和最终等于中间元素加上向左移动的最大总和和向右移动的最大总和。
 
-
-
-```
+```text
 class Solution
 {
   public:
@@ -65,9 +64,7 @@ class Solution
 
 ## python
 
-
-```
-
+```text
 class Solution:
     def maxSubArray(self, A):
         if not A:
@@ -77,7 +74,5 @@ class Solution:
             cur_sum = max(num, cur_sum+num)
             max_sum = max(max_sum, cur_sum)
         return max_sum
-        
 ```
-
 

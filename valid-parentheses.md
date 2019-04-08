@@ -1,8 +1,8 @@
+# Valid Parentheses
+
 ## C++
 
-
-
-```
+```text
 #include <iostream>
 #include <stack>
 #include <unordered_map>
@@ -53,9 +53,7 @@ int main()
 }
 ```
 
-
-```
-
+```text
 class Solution
 {
   public:
@@ -86,12 +84,9 @@ class Solution
 };
 ```
 
-
 ## python
 
-
-
-```
+```text
 class Solution:
     def isValid(self, s):
         """
@@ -108,6 +103,5 @@ class Solution:
             else:
                 stack.append(c)
         return not stack
-
 ```
 

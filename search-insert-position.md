@@ -1,10 +1,10 @@
+# Search Insert Position
+
 ## 有序数组查找元素使用二分法
 
 ## C++
 
-
-```
-
+```text
 class Solution
 {
   public:
@@ -27,8 +27,7 @@ class Solution
 
 ### 使用二分法
 
-```
-
+```text
 class Solution
 {
   public:
@@ -52,9 +51,7 @@ class Solution
 
 ## python
 
-
-```
-
+```text
 class Solution:
     def searchInsert(self, nums: 'List[int]', target: 'int') -> 'int':
         return sorted(nums+[target]).index[target]

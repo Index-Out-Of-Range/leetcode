@@ -1,10 +1,10 @@
+# Count and Say
+
 ## C++
 
 ### 递归
 
-
-
-```
+```text
 class Solution
 {
   public:
@@ -41,12 +41,9 @@ class Solution
 };
 ```
 
-
 ### faster
 
-
-
-```
+```text
 class Solution
 {
   public:
@@ -75,14 +72,11 @@ class Solution
 };
 ```
 
-
-
-
 ### stringstream
+
 * 头文件：sstream
 
-
-```
+```text
 class Solution
 {
   public:
@@ -125,8 +119,7 @@ class Solution
 
 ### 使用正则表达式1
 
-
-```
+```text
 def countAndSay(self, n):
     s = '1'
     for _ in range(n - 1):
@@ -136,9 +129,7 @@ def countAndSay(self, n):
 
 ### 使用正则表达式2
 
-
-```
-
+```text
 def countAndSay(self, n):
     s = '1'
     for _ in range(n - 1):
@@ -149,9 +140,7 @@ def countAndSay(self, n):
 
 ### 使用groupby
 
-
-
-```
+```text
 def countAndSay(self, n):
     s = '1'
     for _ in range(n - 1):

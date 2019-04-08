@@ -1,8 +1,8 @@
+# Roman To Int
+
 ## C++
 
-
-```
-
+```text
 class Solution
 {
   public:
@@ -78,75 +78,67 @@ class Solution
 };
 ```
 
+### 使用unordered\_map
 
-### 使用unordered_map
-
-
-```
+```text
 class Solution
 {
 public:
-	int romanToInt(string s)
-	{
-		unordered_map<char, int> T = {
-			{'I',1},
-			{'V',5},
-			{'X',10},
-			{'L',50},
-			{'C',100},
-			{'D',500},
-			{'M',1000}
-		};
-		int result = T[s.back()];
-		for (int i = s.length() - 2; i >= 0; i--)
-		{
-			if (T[s[i]] < T[s[i + 1]])
-				result -= T[s[i]];
-			else
-				result += T[s[i]];
-		}
-		return result;
-	}
+    int romanToInt(string s)
+    {
+        unordered_map<char, int> T = {
+            {'I',1},
+            {'V',5},
+            {'X',10},
+            {'L',50},
+            {'C',100},
+            {'D',500},
+            {'M',1000}
+        };
+        int result = T[s.back()];
+        for (int i = s.length() - 2; i >= 0; i--)
+        {
+            if (T[s[i]] < T[s[i + 1]])
+                result -= T[s[i]];
+            else
+                result += T[s[i]];
+        }
+        return result;
+    }
 };
 ```
 
-
-
-```
+```text
 class Solution
 {
 public:
-	int romanToInt(string s)
-	{
-		int temp = 0, right = 0, left = 0;
-		for (auto c = s.rbegin(); c != s.rend(); c++)
-		{
-			switch (*c)
-			{
-			case 'I': left = 1; break;
-			case 'V': left = 5; break;
-			case 'X': left = 10; break;
-			case 'L': left = 50; break;
-			case 'C': left = 100; break;
-			case 'D': left = 500; break;
-			case 'M': left = 1000; break;
-			default: break;
-			}
-			left >= temp ? right += left : right -= left;
-			temp = left;
-		}
-		return right;
-	}
+    int romanToInt(string s)
+    {
+        int temp = 0, right = 0, left = 0;
+        for (auto c = s.rbegin(); c != s.rend(); c++)
+        {
+            switch (*c)
+            {
+            case 'I': left = 1; break;
+            case 'V': left = 5; break;
+            case 'X': left = 10; break;
+            case 'L': left = 50; break;
+            case 'C': left = 100; break;
+            case 'D': left = 500; break;
+            case 'M': left = 1000; break;
+            default: break;
+            }
+            left >= temp ? right += left : right -= left;
+            temp = left;
+        }
+        return right;
+    }
 };
 ```
-
 
 ## python
 
-
-
-
-```
+```text
 class Solution:
     def romanToInt(self, s):
         """
@@ -174,5 +166,4 @@ class Solution:
                 i += 1
         return result
 ```
-
 

@@ -1,10 +1,8 @@
-# 关键是使用最短的字符串和最长的字符串比较
+# Longest Common Prefix
 
 ## C++
 
-
-
-```
+```text
 #include <iostream>
 #include <vector>
 #include <string>
@@ -43,25 +41,21 @@ int main()
 }
 ```
 
-
-
 ## Java
 
 Sort the array first, and then you can simply compare the first and last elements in the sorted array.
 
-    
-
-```
+```text
 public String longestCommonPrefix(String[] strs) {
         StringBuilder result = new StringBuilder();
-        
+
         if (strs!= null && strs.length > 0){
-        
+
             Arrays.sort(strs);
-            
+
             char [] a = strs[0].toCharArray();
             char [] b = strs[strs.length-1].toCharArray();
-            
+
             for (int i = 0; i < a.length; i ++){
                 if (b.length > i && b[i] == a[i]){
                     result.append(b[i]);
@@ -74,13 +68,9 @@ public String longestCommonPrefix(String[] strs) {
     }
 ```
 
-
-
 ## python
 
-
-
-```
+```text
 class Solution:
     def longestCommonPrefix(self, strs):
         """

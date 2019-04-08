@@ -1,10 +1,8 @@
-## C++
+# Remove Element
 
-### 使用两个指针
+## 使用两个指针
 
-
-```
-
+```text
 class Solution
 {
   public:
@@ -24,11 +22,9 @@ class Solution
 };
 ```
 
-### 如果遇到val将它和数组最后一个数交换，减少交换次数
+## 如果遇到val将它和数组最后一个数交换，减少交换次数
 
-
-```
-
+```text
 class Solution
 {
   public:

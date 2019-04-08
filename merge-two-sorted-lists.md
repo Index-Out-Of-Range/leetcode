@@ -1,12 +1,14 @@
+# Merge Two Sorted Lists
+
 ## C++
+
 ### 指针，对象使用
-### 初始化对象时用*和不用的区别
-![](/assets/微信截图_20190204194840.png)
 
+### 初始化对象时用\*和不用的区别
 
+![](.gitbook/assets/wei-xin-jie-tu-20190204194840.png)
 
-```
-
+```text
 #include <iostream>
 using namespace std;
 
@@ -91,9 +93,7 @@ int main()
 }
 ```
 
-
-
-```
+```text
 class Solution
 {
   public:
@@ -124,9 +124,7 @@ class Solution
 
 ## python
 
-
-```
-
+```text
 class Solution:
     def mergeTwoLists(self, l1, l2):
         """
